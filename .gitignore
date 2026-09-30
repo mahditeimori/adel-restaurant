@@ -1,0 +1,37 @@
+# ---------------------------------------------------------------------------
+# Generated print artefacts - regenerate any time with:
+#     python generate_qr.py --url <your-url> --mode card
+# Keeping these out of git keeps the repo small and stops stale cards being
+# deployed by accident.
+# ---------------------------------------------------------------------------
+adel_qr-card.html
+adel_qr-card.png
+adel_qr-raw.png
+adel_qr.svg
+adel_qr.png
+
+# ---------------------------------------------------------------------------
+# Working files
+# ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+# index.html IS the landing page. There is deliberately no landing.html:
+# two identical files drift apart, and only one of them would be deployed.
+# ---------------------------------------------------------------------------
+
+# Scraped source data - regenerate with scrape_menu.py + build_menu_data.py
+scraped_menu.json
+scrape_out.txt
+
+# ---------------------------------------------------------------------------
+# OS / editor noise
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+__pycache__/
+_shots/
+
