@@ -1,0 +1,19 @@
+# Cloudflare Pages redirect - keeps the printed QR codes alive.
+#
+# WHY THIS FILE EXISTS
+# The table QR cards point at adel-restaurant.pages.dev. If the site moves to
+# GitHub and this project is emptied, those printed cards die. This rule
+# forwards every old URL to the new home instead, permanently and for free.
+#
+# HOW TO USE IT
+# 1. Replace YOUR-GITHUB-USERNAME below with your actual GitHub username.
+# 2. Upload ONLY this file to the Cloudflare Pages project, and remove
+#    index.html, menu.html, menu-data.js and logo.png from that project.
+#    The redirect has to be the only thing left, otherwise Cloudflare serves
+#    the old files and never reaches this rule.
+# 3. Test adel-restaurant.pages.dev in a private window afterwards.
+#
+# Change 301 to 302 if you ever want to move the target again without
+# visitors' browsers caching the old destination.
+
+/*    https://YOUR-GITHUB-USERNAME.github.io/adel-restaurant/:splat    301
